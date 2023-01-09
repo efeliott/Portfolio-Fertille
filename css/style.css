@@ -1,0 +1,87 @@
+.sun{
+    display: none;
+}
+.moon{
+    padding: 0;
+    height: 50px;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* variables général pour la stylisation */
+:root{
+    /* ===== Colors ===== */
+    --body-color: #E4E9F7;
+    --sidebar-color: #FFF;
+    --primary-color: #695CFE;
+    --primary-color-light: #F6F5FF;
+    --toggle-color: #DDD;
+    --text-color: #707070;
+    --title-color: #000;
+
+    /* ====== Transition ====== */
+    --tran-03: all 0.2s ease;
+    --tran-03: all 0.3s ease;
+    --tran-04: all 0.3s ease;
+    --tran-05: all 0.3s ease;
+}
+/* variables pour le mode sombre */
+body.dark{
+    --body-color: #18191a;
+    --sidebar-color: #242526;
+    --primary-color: #695CFE;
+    --primary-color-light: #3a3b3c;
+    --toggle-color: #fff;
+    --text-color: #eee;
+    --title-color: #FFF5EE;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: var(--body-color);
+}
+section{
+    min-height: 100vh;
+}
+/* ==================== Sidebar ==================== */
+#side_nav{
+    background-color: var(--sidebar-color);
+    min-width: 250px;
+    max-width: 250px;
+    transition: all 0.3s;
+}
+.content{
+    min-height: 100vh;
+    width: 100%;
+}
+.sidebar li.active{
+    background: var(--toggle-color);
+}
+.sidebar li.active a, .sidebar li.active a:hover{
+    color: var(--toggle-color);
+    background-color: var(--primary-color);
+    border-radius: 8px;
+}
+.sidebar li a{
+    color: var(--text-color);
+}
+@media(max-width: 767px){
+    #side_nav{
+        margin-left: -250px;
+        position: absolute;
+        min-height: 100vh;
+        z-index: 1;
+    }
+    #side_nav.active{
+        margin-left: 0;
+    }
+}
+/* Impose la taille max a la navbar */
+.width-max{
+    min-width: 100%;
+}
+/* ==================== End Sidebar ==================== */

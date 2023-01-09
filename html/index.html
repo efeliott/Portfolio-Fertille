@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="../img/logo_nuit.svg" type="image/svg">
+    <!-- CSS Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- Lien vers la feuille de style -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Lien pour les icones -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Portfolio | Eliott FERTILLE</title>
+  </head>
+  <body>
+    <div class="main-container d-flex">
+        <div class="sidebar" id="side_nav">
+            <div class="header-box p-2 pt-3 pb-4 d-flex justify-content-between">
+                <a href="#" class="text-decoration-none">
+                    <!-- Logo pour le mode sombre -->
+                    <img src="../img/logo_nuit.svg" class="sun">
+                    <!-- Logo pour le mode clair -->
+                    <img src="../img/logo_jour.svg" class="moon">
+                </a>
+                <span class="text-dark px-4 pt-2">Eliott Fertille</span>
+                <button class="btn d-md-none d-block close-btn px-1 py-0 text-white"><i class='bx bx-menu-alt-left'></i></button>
+            </div>
+            
+            <!-- Liste des onglets dans la sidebar -->
+            <ul class="list-unstyled px-2">
+                <li class="active"><a href="#" class="text-decoration-none px-3 py-2 d-block mt-2"><i class='bx bx-home me-1'></i>Accueil</a></li>  
+                <li class=""><a href="#" class="text-decoration-none px-3 py-2 d-block mt-2"><i class='bx bx-user-circle me-1' ></i>A Propos</a></li> 
+                <li class=""><a href="#" class="text-decoration-none px-3 py-2 d-block mt-2"><i class='bx bxs-graduation me-1' ></i>Parcours</a></li> 
+                <li class=""><a href="#" class="text-decoration-none px-3 py-2 d-block mt-2"><i class='bx bx-code-alt me-1' ></i>Compétences</a></li>  
+                <li class=""><a href="#" class="text-decoration-none px-3 py-2 d-block mt-2"><i class='bx bx-folder me-1' ></i>Projets</a></li>  
+                <li class=""><a href="#" class="text-decoration-none px-3 py-2 d-block mt-2"><i class='bx bx-buildings me-1' ></i>Stage</a></li>
+                <li class=""><a href="#" class="text-decoration-none px-3 py-2 d-block mt-2"><i class='bx bx-info-circle me-1' ></i>Veille</a></li>   
+                <li class=""><a href="#" class="text-decoration-none px-3 py-2 d-block mt-2"><i class='bx bx-chat me-1' ></i>Contactez-moi</a></li>
+            </ul>
+        </div>
+        <!-- Navbar qui contient le menu bburger en écran réduit -->
+        <div class="content">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light width-max">
+                <div class="container-fluid">
+                    <div class="d-flex justify-content-between d-md-none d-block">
+                        <a class="navbar-brand fs-4" href="#">Menu</a>
+                        <button class="btn px-1 py-0 open-btn"><i class='bx bx-menu' ></i></button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Profile</a>
+                        </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <h2>Bonjour, je m'appelle Eliott Fertille</h2>
+                        <h2>Je suis <span>Etudiant</span></h2>
+                    </div>
+                    <div class="col-6">
+                        <img src="../img/profil_pic_hero.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lien vers la bundle Bootstrap pour le JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script src="../js/sidebar_active_links.js"></script>
+    <script src="../js/sidebar_open_close.js"></script>
+  </body>
+</html>
