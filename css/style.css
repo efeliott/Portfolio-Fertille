@@ -94,8 +94,8 @@ section{
     font-size: 3rem;
     font-family: 'Poppins', sans-serif;
 }
-/* =============== Padding & Margin =============== */
 @media screen and (min-width: 768px){
+    /* =============== Padding & Margin =============== */
     .px-lg-mega-huge{
 		padding-left:9rem !important;
 		padding-right:9rem !important;
@@ -104,15 +104,36 @@ section{
 		padding-top:9rem !important;
 		padding-bottom:9rem !important;
 	}
-}
-.px-huge{
+    .px-huge{
     padding-left: 4rem !important;
     padding-right: 4rem !important;
-}
-.py-huge{
+    }
+    .py-huge{
     padding-top: 4rem !important;
     padding-bottom: 4rem !important;
+    }
 }
+@media screen and (max-width: 576px){
+    .profil_pic{
+        height: 250px !important;
+        width: 250px !important;
+    }
+    .text-xs24{
+        font-size: 24px !important;
+    }
+    .text-xs-18{
+        font-size: 18px !important;
+    }
+    .py-xs-huge{
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+    .px-xs-huge{
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+}
+
 /* ==================== Sidebar ==================== */
 #side_nav{
     background-color: var(--sidebar-color);
@@ -161,6 +182,9 @@ section{
 /* ==================== Home Section ==================== */
 .personal-info h3{
     font-size: 1.3rem;
-    text-align: center;
+    text-align: left;
+}
+.bg-progress-bar{
+    background-color: var(--primary-color);
 }
 /* ==================== End Home Section ==================== */
