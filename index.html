@@ -16,33 +16,36 @@
   </head>
   <body>
     <div class="main-container d-flex">
-        <div class="sidebar" id="side_nav">
-            <div class="header-box p-2 pt-3 pb-4 d-flex justify-content-between">
-                <a href="#" class="text-decoration-none">
-                    <!-- Logo pour le mode sombre -->
-                    <img src="img\logo_nuit.svg" class="sun">
-                    <!-- Logo pour le mode clair -->
-                    <img src="img\logo_jour.svg" class="moon">
-                </a>
-                <span class="text-dark px-4 pt-2">Eliott Fertille</span>
-                <button class="btn d-block d-md-none close-btn px-2 py-1 text-dark"><i class='bx bx-menu-alt-left'></i></button>
+        <div class="sidebar d-block" id="side_nav">
+            <div class="sidebar-container">
+                <div class="header-box p-2 pt-3 pb-4 d-flex justify-content-between">
+                    <a href="#" class="text-decoration-none">
+                        <!-- Logo pour le mode sombre -->
+                        <img src="img\logo_nuit.svg" class="sun">
+                        <!-- Logo pour le mode clair -->
+                        <img src="img\logo_jour.svg" class="moon">
+                    </a>
+                    <span class="text-dark px-4 pt-2">Eliott Fertille</span>
+                    <button class="btn d-md-none d-block close-btn p-0 text-dark"><i class='bx bx-menu-alt-left'></i></button>
+                </div>
+                
+                <!-- Liste des onglets dans la sidebar -->
+                <ul class="list-unstyled px-2">
+                    <li class="active"><a href="#" class="text-decoration-none px-3 py-2 d-block mt-2"><i class='bx bx-home me-1'></i>Accueil</a></li>  
+                    <li class=""><a href="#about" class="text-decoration-none px-3 py-2 d-block mt-2"><i class='bx bx-user-circle me-1' ></i>A Propos</a></li> 
+                    <li class=""><a href="#" class="text-decoration-none px-3 py-2 d-block mt-2"><i class='bx bxs-graduation me-1' ></i>Parcours</a></li> 
+                    <li class=""><a href="#" class="text-decoration-none px-3 py-2 d-block mt-2"><i class='bx bx-code-alt me-1' ></i>Compétences</a></li>  
+                    <li class=""><a href="#" class="text-decoration-none px-3 py-2 d-block mt-2"><i class='bx bx-folder me-1' ></i>Projets</a></li>  
+                    <li class=""><a href="#" class="text-decoration-none px-3 py-2 d-block mt-2"><i class='bx bx-buildings me-1' ></i>Stage</a></li>
+                    <li class=""><a href="#" class="text-decoration-none px-3 py-2 d-block mt-2"><i class='bx bx-info-circle me-1' ></i>Veille</a></li>   
+                    <li class=""><a href="#" class="text-decoration-none px-3 py-2 d-block mt-2"><i class='bx bx-chat me-1' ></i>Contactez-moi</a></li>
+                </ul>
             </div>
             
-            <!-- Liste des onglets dans la sidebar -->
-            <ul class="list-unstyled px-2">
-                <li class="active"><a href="#" class="text-decoration-none px-3 py-2 d-block mt-2"><i class='bx bx-home me-1'></i>Accueil</a></li>  
-                <li class=""><a href="#" class="text-decoration-none px-3 py-2 d-block mt-2"><i class='bx bx-user-circle me-1' ></i>A Propos</a></li> 
-                <li class=""><a href="#" class="text-decoration-none px-3 py-2 d-block mt-2"><i class='bx bxs-graduation me-1' ></i>Parcours</a></li> 
-                <li class=""><a href="#" class="text-decoration-none px-3 py-2 d-block mt-2"><i class='bx bx-code-alt me-1' ></i>Compétences</a></li>  
-                <li class=""><a href="#" class="text-decoration-none px-3 py-2 d-block mt-2"><i class='bx bx-folder me-1' ></i>Projets</a></li>  
-                <li class=""><a href="#" class="text-decoration-none px-3 py-2 d-block mt-2"><i class='bx bx-buildings me-1' ></i>Stage</a></li>
-                <li class=""><a href="#" class="text-decoration-none px-3 py-2 d-block mt-2"><i class='bx bx-info-circle me-1' ></i>Veille</a></li>   
-                <li class=""><a href="#" class="text-decoration-none px-3 py-2 d-block mt-2"><i class='bx bx-chat me-1' ></i>Contactez-moi</a></li>
-            </ul>
         </div>
         <!-- Navbar qui contient le menu bburger en écran réduit -->
         <div class="content">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light width-max">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
                     <div class="d-flex justify-content-between d-md-none d-block">
                         <a class="navbar-brand fs-4" href="#">Menu</a>
@@ -58,15 +61,41 @@
                 </div>
             </nav>
             <section class="home">
-                <div class="container py-lg-mega-huge px-lg-mega-huge ">
+                <div class="container py-lg-mega-huge px-lg-mega-huge">
                     <div class="row">
-                        <div class="col-12 col-md-8 d-block order-2 p-5 py-lg-mega-huge px-lg-5 text-gris">
+                        <div class="col-12 col-md-6 d-block order-2 text-gris px-lg-2 py-lg-mega-huge">
                             <h2 class="name">Bonjour, je m'appelle <span class="text-violet-nom">Eliott Fertille</span></h2>
                             <h2>Je suis <span class="text-violet typing">Etudiant</span></h2>
                             <button class="btn-gen rounded-pill mt-3"><a href="#" class="text-decoration-none text-light">Contactez-moi</a></button>
                         </div>
-                        <div class="col-12 col-md-4 order-1 order-md-2 p-1">
-                            <img src="img\profil_pic_hero.svg" alt="" class="ms-md-5">
+                        <div class="col-12 col-md-6 order-1 order-md-2 px-huge py-huge">
+                            <img src="img\profil_pic_hero.svg">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="about" id="about">
+                <div class="container">
+                    <div class="row px-lg-mega-huge">
+                        <div class="col titre-section">
+                            <h2 class=>À Propos</h2>
+                        </div>
+                        <div class="col-12">
+                            <h2>Je suis étudiant en <span class="text-violet">developpement web</span> et <span class="text-violet">mobile</span></h2>
+                        </div>
+                        <div class="col-9 text-dark mt-3">
+                            <p>Je m'appelle Eliott et j'ai 19 ans, je suis actuellement en BTS SIO (Services Informatiques aux Organisations) en option
+                                SLAM (Solutions Logicielles et Applications Métiers) au lycée Ella Fitzgerald à Vienne. 
+                                J'ai obtenu un baccalauréat technologique STI2D (Sciences et Technologies de l'Industrie et du Développement Durable) au lycée Edouard Branly à Lyon.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 col-lg-3 personal-info">
+                            <h3 class="border-bottom border-dark"><i class='bx bx-envelope'></i> Email : <span class="text-gris">efeliott@gmail.com</span></h3>
+                        </div>
+                        <div class="col-6 col-lg-3 personal-info">
+                            <h3 class="border-bottom border-dark"><i class='bx bx-envelope'></i> Ville : <span class="text-gris">Lyon</span></h3>
                         </div>
                     </div>
                 </div>
@@ -82,5 +111,6 @@
 
     <script src="js\sidebar_active_links.js"></script>
     <script src="js\sidebar_open_close.js"></script>
+    <script src="js\typing.js"></script>
   </body>
 </html>
