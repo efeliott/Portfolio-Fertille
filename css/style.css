@@ -2,10 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap');
 /* Importation de la police Moon Dance */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
-
-.sun{
-    display: none;
-}
 .moon{
     padding: 0;
     height: 50px;
@@ -26,12 +22,6 @@
     --toggle-color: #DDD;
     --text-color: #707070;
     --title-color: #000;
-
-    /* ====== Transition ====== */
-    --tran-03: all 0.2s ease;
-    --tran-03: all 0.3s ease;
-    --tran-04: all 0.3s ease;
-    --tran-05: all 0.3s ease;
 }
 /* variables pour le mode sombre */
 body.dark{
@@ -177,6 +167,7 @@ section{
     font-weight: bold;
 }
 .navbar{
+    z-index: 10;
     position: fixed;
     min-width: 100%;
 }
@@ -231,5 +222,14 @@ section{
     right: 0;
     top: 0;
     width: 40%;
+}
+.progress-50::after {
+    content: "";
+    background-color: grey;
+    height: 100%;
+    position: relative;
+    right: 0;
+    top: 0;
+    width: 50%;
 }
 /* ==================== End Home Section ==================== */
