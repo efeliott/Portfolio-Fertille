@@ -16,33 +16,34 @@
   </head>
   <body>
     <div class="main-container d-flex">
-        <div class="sidebar d-block" id="side_nav">
-            <div class="sidebar-container">
-                <div class="header-box p-2 pt-3 pb-4 d-flex justify-content-between">
-                    <a href="#" class="text-decoration-none">
-                        <!-- Logo pour le mode sombre -->
-                        <!-- <img src="img\logo_nuit.svg" class="sun"> -->
-                        <!-- Logo pour le mode clair -->
-                        <img src="img\logo_jour.svg" class="moon">
-                    </a>
-                    <span class="text-dark px-4 pt-2">Eliott Fertille</span>
-                    <button class="btn d-md-none d-block close-btn p-0 text-dark"><i class='bx bx-menu-alt-left'></i></button>
+        <nav>
+            <div class="sidebar d-block" id="side_nav">
+                <div class="sidebar-container">
+                    <div class="header-box p-2 pt-3 pb-4 d-flex justify-content-between">
+                        <a href="#" class="text-decoration-none">
+                            <!-- Logo pour le mode sombre -->
+                            <!-- <img src="img\logo_nuit.svg" class="sun"> -->
+                            <!-- Logo pour le mode clair -->
+                            <img src="img\logo_jour.svg" class="moon">
+                        </a>
+                        <span class="text-dark px-4 pt-2">Eliott Fertille</span>
+                        <button class="btn d-md-none d-block close-btn p-0 text-dark"><i class='bx bx-menu-alt-left'></i></button>
+                    </div>
+                    
+                    <!-- Liste des onglets dans la sidebar -->
+                    <ul class="list-unstyled px-2">
+                        <li class="nav-link"><a href="#" class="nav-link text-decoration-none px-3 py-2 d-block mt-2"><i class='bx bx-home me-1'></i>Accueil</a></li>  
+                        <li class="nav-link"><a href="#about" class="nav-link text-decoration-none px-3 py-2 d-block mt-2"><i class='bx bx-user-circle me-1' ></i>A Propos</a></li> 
+                        <li class="nav-link"><a href="#step" class="nav-link text-decoration-none px-3 py-2 d-block mt-2"><i class='bx bxs-graduation me-1' ></i>Parcours</a></li> 
+                        <li class="nav-link"><a href="#skills" class="nav-link text-decoration-none px-3 py-2 d-block mt-2"><i class='bx bx-code-alt me-1' ></i>Compétences</a></li>  
+                        <li class="nav-link"><a href="#projects" class="nav-link text-decoration-none px-3 py-2 d-block mt-2"><i class='bx bx-folder me-1' ></i>Projets</a></li>  
+                        <li class="nav-link"><a href="#internship" class="nav-link text-decoration-none px-3 py-2 d-block mt-2"><i class='bx bx-buildings me-1' ></i>Stage</a></li>
+                        <li class="nav-link"><a href="#veille" class="nav-link text-decoration-none px-3 py-2 d-block mt-2"><i class='bx bx-info-circle me-1' ></i>Veille</a></li>   
+                        <li class="nav-link"><a href="#contact" class="nav-link text-decoration-none px-3 py-2 d-block mt-2"><i class='bx bx-chat me-1' ></i>Contactez-moi</a></li>
+                    </ul>
                 </div>
-                
-                <!-- Liste des onglets dans la sidebar -->
-                <ul class="list-unstyled px-2">
-                    <li class="active"><a href="#" class="text-decoration-none px-3 py-2 d-block mt-2"><i class='bx bx-home me-1'></i>Accueil</a></li>  
-                    <li class=""><a href="#about" class="text-decoration-none px-3 py-2 d-block mt-2"><i class='bx bx-user-circle me-1' ></i>A Propos</a></li> 
-                    <li class=""><a href="#" class="text-decoration-none px-3 py-2 d-block mt-2"><i class='bx bxs-graduation me-1' ></i>Parcours</a></li> 
-                    <li class=""><a href="#" class="text-decoration-none px-3 py-2 d-block mt-2"><i class='bx bx-code-alt me-1' ></i>Compétences</a></li>  
-                    <li class=""><a href="#" class="text-decoration-none px-3 py-2 d-block mt-2"><i class='bx bx-folder me-1' ></i>Projets</a></li>  
-                    <li class=""><a href="#" class="text-decoration-none px-3 py-2 d-block mt-2"><i class='bx bx-buildings me-1' ></i>Stage</a></li>
-                    <li class=""><a href="#" class="text-decoration-none px-3 py-2 d-block mt-2"><i class='bx bx-info-circle me-1' ></i>Veille</a></li>   
-                    <li class=""><a href="#" class="text-decoration-none px-3 py-2 d-block mt-2"><i class='bx bx-chat me-1' ></i>Contactez-moi</a></li>
-                </ul>
             </div>
-            
-        </div>
+        </nav>
         <!-- Navbar qui contient le menu bburger en écran réduit -->
         <div class="content">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -54,7 +55,7 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Profile</a>
+                            <a class="nav-link" aria-current="page" href="#">Profile</a>
                         </li>
                         </ul>
                     </div>
@@ -74,7 +75,7 @@
                     </div>
                 </div>
             </section>
-            <section class="about" id="about">
+            <section class="about mt-5" id="about">
                 <div class="container">
                     <div class="row px-lg-mega-huge">
                         <div class="col titre-section">
@@ -118,32 +119,48 @@
                             </div>
                         </div>
                         <div class="col-12 col-lg-6">
-                            <div class="container">
-                                <div class="row pt-1">
-                                    <div class="col-2">
-                                        <h5>HTML</h5>
+                            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                  <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                                  <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                                  <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                    <div class="carousel-caption d-none d-md-block">
+                                      <h5>Slide 1</h5>
+                                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                                     </div>
-                                    <div class="col-10">
-                                        <div class="progress">
-                                            <div class="progress-bar bg-progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
-                                        </div>
+                                  </div>
+                                  <div class="carousel-item">
+                                    <div class="carousel-caption d-none d-md-block">
+                                      <h5>Slide 2</h5>
+                                      <p>Suspendisse in est euismod, malesuada magna eu, placerat mi.</p>
                                     </div>
+                                  </div>
+                                  <div class="carousel-item">
+                                    <div class="carousel-caption d-none d-md-block">
+                                      <h5>Slide 3</h5>
+                                      <p>Donec auctor, nibh eget fermentum mollis, velit nisl convallis nibh.</p>
+                                    </div>
+                                  </div>
                                 </div>
-                                <div class="row pt-1">
-                                    <div class="col-2">
-                                        <h5>CSS</h5>
-                                    </div>
-                                    <div class="col-10">
-                                        <div class="progress">
-                                            <div class="progress-bar bg-progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
+                                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="sr-only">Next</span>
+                                </a>
+                              </div>
+                              
                         </div>
                     </div>
                 </div>
+            </section>
+            <section class="step" id="step">
+
             </section>
         </div>
     </div>
