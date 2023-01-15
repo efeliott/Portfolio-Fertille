@@ -143,11 +143,12 @@ section{
 }
 .sidebar li.active{
     background: var(--toggle-color);
+    border-radius: 10px;
 }
-.sidebar li.active a, .sidebar li.active a:hover{
+.sidebar li.active a, .sidebar li:hover{
     color: var(--toggle-color);
     background-color: var(--primary-color);
-    border-radius: 8px;
+    border-radius: 10px;
 }
 .sidebar li a{
     color: var(--text-color);
