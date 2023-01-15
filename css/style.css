@@ -104,6 +104,9 @@ section{
 		padding-top:9rem !important;
 		padding-bottom:9rem !important;
 	}
+    .font-size-1-2{
+        font-size: 1.2rem !important;
+    }
     .px-huge{
     padding-left: 4rem !important;
     padding-right: 4rem !important;
@@ -117,12 +120,6 @@ section{
     .profil_pic{
         height: 250px !important;
         width: 250px !important;
-    }
-    .text-xs24{
-        font-size: 24px !important;
-    }
-    .text-xs-18{
-        font-size: 18px !important;
     }
     .py-xs-huge{
         padding-top: 4rem;
@@ -192,5 +189,47 @@ section{
 .carousel-item {
     height: 200px;
     width: 100%;
+}
+.carousel-control-prev i,
+.carousel-control-next i {
+   color: black !important;
+   font-size: 3.5rem;
+}
+.fs-progress-bar{
+    font-size: 1rem;
+    color: black;
+    margin-right: 5px;
+    min-width: 75px;
+    text-align: left;
+}
+.progress-bar{  
+    background-color: var(--primary-color);
+}
+.progress-80::after {
+    content: "";
+    background-color: grey;
+    height: 100%;
+    position: relative;
+    right: 0;
+    top: 0;
+    width: 20%;
+}
+.progress-70::after {
+    content: "";
+    background-color: grey;
+    height: 100%;
+    position: relative;
+    right: 0;
+    top: 0;
+    width: 30%;
+}
+.progress-60::after {
+    content: "";
+    background-color: grey;
+    height: 100%;
+    position: relative;
+    right: 0;
+    top: 0;
+    width: 40%;
 }
 /* ==================== End Home Section ==================== */
