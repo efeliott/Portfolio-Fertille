@@ -173,7 +173,7 @@ section{
     min-width: 100%;
 }
 /* ==================== End Sidebar ==================== */
-/* ==================== Home Section ==================== */
+/* ==================== About Section ==================== */
 .personal-info h3{
     font-size: 1.3rem;
     text-align: left;
@@ -233,4 +233,53 @@ section{
     top: 0;
     width: 50%;
 }
-/* ==================== End Home Section ==================== */
+/* ==================== End About Section ==================== */
+/* ==================== Step Section ==================== */
+/* CSS pour la frise chronologique */
+.timeline {
+    position: relative;
+    padding: 20px 0;
+    list-style: none;
+}
+
+.timeline:before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    bottom: 120px;
+    left: 50%;
+    width: 5px;
+    margin-left: -1.5px;
+    background-color: var(--primary-color);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 50px;
+    text-align: left;
+}
+
+.timeline-icon {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 30px;
+    height: 30px;
+    margin-left: -15px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+}
+
+.timeline-content {
+    position: relative;
+}
+.timeline-content h2, 
+.timeline-content h2{
+    text-align: left;
+}
+
+.timeline-content-date {
+    margin-top: 0;
+}
+
+/* ==================== End Step Section ==================== */
