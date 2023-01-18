@@ -79,10 +79,29 @@ section{
     margin-bottom: 60px;
 }
 .titre-section h2{
-    flex: 0 0 100%;
+    position: relative;
     max-width: 100%;
     font-size: 3rem;
     font-family: 'Poppins', sans-serif;
+}
+.section-title::before{
+    content: '';
+    height: 4px;
+    width: 50px;
+    background-color: var(--primary-color);
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+.section-title::after{
+    content: '';
+    height: 4px;
+    width: 25px;
+    background-color: var(--primary-color);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 8px;
 }
 @media screen and (min-width: 768px){
     /* =============== Padding & Margin =============== */
@@ -123,6 +142,7 @@ section{
 .color-dark{
     color: black;
 }
+
 /* ==================== Sidebar ==================== */
 #side_nav{
     background-color: var(--sidebar-color);
@@ -168,7 +188,6 @@ section{
     font-weight: bold;
 }
 .navbar{
-    z-index: 10;
     position: fixed;
     min-width: 100%;
 }
