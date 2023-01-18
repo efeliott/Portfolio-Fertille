@@ -6,7 +6,6 @@
     padding: 0;
     height: 50px;
 }
-
 *{
     padding: 0;
     margin: 0;
@@ -40,7 +39,7 @@ body{
     background: var(--body-color);
 }
 section{
-    min-height: 100vh;
+    min-height: 70vh;
 }
 /* Impose la largeur max */
 .width-max{
@@ -103,6 +102,14 @@ section{
     left: 0;
     margin-top: 8px;
 }
+.btn-primary{
+    background-color: var(--primary-color);
+}
+.btn-primary:hover{
+    transform: scale(1.1);
+    transition: ease .2s;
+    background-color: var(--primary-color);
+}
 @media screen and (min-width: 768px){
     /* =============== Padding & Margin =============== */
     .px-lg-mega-huge{
@@ -124,6 +131,9 @@ section{
     padding-top: 4rem !important;
     padding-bottom: 4rem !important;
     }
+    .fs-md-4{
+        font-size: 1.5rem !important;
+    }
 }
 @media screen and (max-width: 576px){
     .profil_pic{
@@ -138,11 +148,13 @@ section{
         padding-left: 4rem;
         padding-right: 4rem;
     }
+    .btn-gen{
+        width: 250px;
+    }
 }
 .color-dark{
     color: black;
 }
-
 /* ==================== Sidebar ==================== */
 #side_nav{
     background-color: var(--sidebar-color);
@@ -160,10 +172,12 @@ section{
 }
 .sidebar.active{
     min-height: 100vh;
+
 }
 .sidebar li.active{
     background: var(--toggle-color);
     border-radius: 10px;
+    z-index: 1;
 }
 .sidebar li.active a, .sidebar li:hover{
     color: var(--toggle-color);
@@ -178,7 +192,7 @@ section{
         margin-left: -250px;
         position: fixed;
         min-height: 100vh;
-        z-index: 1;
+        z-index: 2;
     }
     #side_nav.active{
         margin-left: 0;
@@ -190,6 +204,7 @@ section{
 .navbar{
     position: fixed;
     min-width: 100%;
+    z-index: 1;
 }
 /* ==================== End Sidebar ==================== */
 /* ==================== About Section ==================== */
@@ -260,24 +275,21 @@ section{
     padding: 20px 0;
     list-style: none;
 }
-
 .timeline:before {
     content: "";
     position: absolute;
     top: 20px;
-    bottom: 120px;
+    bottom: 150px;
     left: 50%;
     width: 5px;
     margin-left: -1.5px;
     background-color: var(--primary-color);
 }
-
 .timeline-item {
     position: relative;
     margin-bottom: 50px;
     text-align: left;
 }
-
 .timeline-icon {
     position: absolute;
     top: 0;
@@ -288,17 +300,35 @@ section{
     border-radius: 50%;
     background-color: var(--primary-color);
 }
-
 .timeline-content {
     position: relative;
 }
 .timeline-content h2, 
-.timeline-content h2{
+.timeline-content p{
     text-align: left;
 }
-
 .timeline-content-date {
     margin-top: 0;
 }
-
 /* ==================== End Step Section ==================== */
+/* ==================== Projects Section ==================== */
+.collapse {
+    display: none;
+}
+.card{
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+    border-radius: 0px 20px;
+}
+.card-header{
+    background-color: rgb(247, 247, 247);
+}
+.portfolio-dev-img{
+    width: 100%;
+    position: static;
+    max-height: 380px;
+    justify-content: center;
+}
+/* ==================== End Projects Section ==================== */
+/* ==================== Internship Section ==================== */
+
+/* ==================== End Internship Section ==================== */
