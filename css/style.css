@@ -41,6 +41,9 @@ body{
 section{
     min-height: 70vh;
 }
+.container{
+    padding-right: 5px;
+}
 /* Impose la largeur max */
 .width-max{
     min-width: 100%;
@@ -278,8 +281,8 @@ section{
 .timeline:before {
     content: "";
     position: absolute;
-    top: 20px;
-    bottom: 150px;
+    top: 100px;
+    bottom: 100px;
     left: 50%;
     width: 5px;
     margin-left: -1.5px;
@@ -292,7 +295,7 @@ section{
 }
 .timeline-icon {
     position: absolute;
-    top: 0;
+    top: 50px;
     left: 50%;
     width: 30px;
     height: 30px;
