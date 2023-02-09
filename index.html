@@ -329,15 +329,15 @@
                               <div class="col-12 col-md-6 py-5">
                                 <div class="card">
                                   <div class="card-header">
-                                    <h5 class="d-flex card-title justify-content-center">Satil</h5>
+                                    <h5 class="d-flex card-title justify-content-center">In progress</h5>
                                   </div>
                                   <div class="card-body">
                                     <img src="img\satil-dev-vector.jpg" alt="web developpement" class="portfolio-dev-img">
-                                    <h2 class="d-flex card-text justify-content-center fs-4">Création du site Satil (filiale de Poncin Métal)</h2>
+                                    <h2 class="d-flex card-text justify-content-center fs-4">------</h2>
                                     <a href="#" class="btn btn-primary" data-toggle="collapse" data-target="#more-info-2">Lire plus</a>
                                     <div class="collapse" id="more-info-2">
-                                      <p class="p-3">Lors de mon stage chez Arthesis à Brignais, j'ai pu réaliser le site de la filiale de Poncin Métal, Satil.
-                                        C'est un site que j'ai créé en utilisant WordPress et de la stylisation par des classes Bootstrap.
+                                      <p class="p-3">
+                                        In progress
                                       </p>
                                     </div>
                                   </div>
@@ -392,21 +392,20 @@
                             </div>
                           </div>
                           <div class="col-12 col-md-6 py-5">
-                            <div class="card">
-                              <div class="card-header">
-                                <h5 class="d-flex card-title justify-content-center">Arthesis</h5>
-                              </div>
-                              <div class="card-body">
-                                <img src="img\work-in-progress.jpg" alt="web developpement" class="portfolio-dev-img">
-                                <h2 class="d-flex card-text justify-content-center fs-4">Deuxième stage du BTS SIO</h2>
-                                <a href="#" class="btn btn-primary" data-toggle="collapse" data-target="#more-info-2">Lire plus</a>
-                                <div class="collapse" id="more-info-2">
-                                  <p class="p-3">
-                                    À venir
-                                  </p>
+                                <!-- Bloc principal -->
+                                <div class="container-popup">
+                                    <h1 class="title-popup">Arthesis</h1>
+                                    <p class="description">Stage de secondes années de BTS SIO</p>
+                                    <button class="btn btn-primary" id="open-popup">Ouvrir le pop-up</button>
                                 </div>
-                              </div>
-                            </div>
+                                
+                                <!-- Bloc pop-up -->
+                                <div class="popup" id="popup">
+                                    <div class="popup-content">
+                                    <span class="close" id="close-popup">&times;</span>
+                                    <p>Texte du pop-up</p>
+                                    </div>
+                                </div>
                           </div>
                         </div>
                     </div>
@@ -429,5 +428,6 @@
     <script src="js\typing.js"></script>
     <script src="js\slider.js"></script>
     <script src="js\card.js"></script>
+    <script src="js\popup.js"></script>
     </body>
 </html>
