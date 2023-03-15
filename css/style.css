@@ -39,7 +39,7 @@ body{
     background: var(--body-color);
 }
 section{
-    min-height: 70vh;
+    min-height: 100vh;
 }
 .container{
     padding-right: 5px;
@@ -174,18 +174,21 @@ section{
     width: 100%;
 }
 .sidebar.active{
-    min-height: 100vh;
-
+    height: 100%;
+    position: static;
+}
+.nav-link{
+    border-radius: 20px;
 }
 .sidebar li.active{
     background: var(--toggle-color);
-    border-radius: 10px;
+    border-radius: 20px;
     z-index: 1;
 }
 .sidebar li.active a, .sidebar li:hover{
     color: var(--toggle-color);
     background-color: var(--primary-color);
-    border-radius: 10px;
+    border-radius: 20px;
 }
 .sidebar li a{
     color: var(--text-color);
@@ -270,6 +273,15 @@ section{
     top: 0;
     width: 50%;
 }
+.progress-40::after {
+    content: "";
+    background-color: grey;
+    height: 100%;
+    position: relative;
+    right: 0;
+    top: 0;
+    width: 60%;
+}
 /* ==================== End About Section ==================== */
 /* ==================== Step Section ==================== */
 /* CSS pour la frise chronologique */
@@ -282,7 +294,7 @@ section{
     content: "";
     position: absolute;
     top: 100px;
-    bottom: 100px;
+    bottom: 110px;
     left: 50%;
     width: 5px;
     margin-left: -1.5px;
