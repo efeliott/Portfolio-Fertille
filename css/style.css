@@ -108,6 +108,8 @@ section{
 }
 .btn-primary{
     background-color: var(--primary-color);
+    border-radius: 0.8rem;
+    border: none;
 }
 .btn-primary:hover{
     transform: scale(1.1);
@@ -325,6 +327,12 @@ section{
 }
 .timeline-content-date {
     margin-top: 0;
+}
+.timeline-container{
+    display: none;
+}
+.timeline-container.active{
+    display: block;
 }
 /* ==================== End Step Section ==================== */
 /* ==================== Projects Section ==================== */
