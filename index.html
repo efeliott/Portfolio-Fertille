@@ -63,7 +63,7 @@
             <section class="home">
                 <div class="container p-2 mt-5 py-lg-mega-huge px-lg-mega-huge">
                     <div class="row">
-                        <div class="col col-md-6 d-block p-4 order-2 text-gris px-lg-2 py-lg-mega-huge">
+                        <div class="col col-md-6 d-block  order-2 text-gris px-lg-2 py-lg-mega-huge">
                             <h2 class="name fs-4 fs-md-1">Bonjour, je m'appelle <span class="text-violet-nom fs-2">Eliott Fertille</span></h2>
                             <h2 class="fs-4 fs-md-1">Je suis <span class="text-violet typing fs-5 fs-md-1">Etudiant</span></h2>
                             <button class="btn-gen rounded-pill mt-3 fs-4 fs-md-1"><a href="#" class="text-decoration-none text-light">Contactez-moi</a></button>
@@ -229,12 +229,14 @@
                             <h2 class="pt-5 section-title">Parcours</h2>
                         </div>
                     </div>
-                    <div class="container d-flex justify-content-center pb-4">
+                    <div class="container d-flex justify-content-center pb-4 btn-parcours">
                         <div class="row">
                             <div class="col-6">
-                                <button class="btn btn-primary btn-school">Scolaire</button>
+                                <button class="btn btn-primary btn-school active">Scolaire</button>
                             </div>
-                            <div class="col-6"><button class="btn btn-primary btn-work">Professionelle</button></div>
+                            <div class="col-6">
+                                <button class="btn btn-primary btn-work">Professionelle</button>
+                            </div>
                         </div>
                     </div>
                     <div class="timeline-container-school active">
@@ -244,7 +246,7 @@
                                     <h2 class="d-flex justify-content-center">Parcours Scolaire</h2>
                                 </div>
                             </div>
-                            <div class="row d-flex justify-content-center">
+                            <div class="row d-flex justify-content-center align-items-center timeline-size">
                                 <div class="col-12 col-md-6 d-block px-0">
                                     <div class="timeline">
                                         <div class="timeline-item">
@@ -264,7 +266,7 @@
                                             <div class="timeline-icon"></div>
                                             <div class="timeline-content d-block">
                                                 <div class="row justify-content-end">
-                                                    <div class="col-5">
+                                                    <div class="col-5 px-0">
                                                         <h2 class="timeline-content-date d-flex fs-6 fs-md-4">BTS SIO (option SLAM)</h2>
                                                         <p class="timeline-content-text d-flex ">Lycée Ella Fitzgerald</p>
                                                         <p class="timeline-content-text d-flex "><i class='bx bxs-calendar'></i> 2021-23</p>
@@ -310,7 +312,6 @@
                                                         <p class="timeline-content-text"><i class='bx bxs-calendar'></i> Janvier - Février 2023</p>
                                                     </div>
                                                 </div>
-                                                
                                             </div>
                                         </div>
                                         <div class="timeline-item">
@@ -395,21 +396,19 @@
                             <h2 class="pt-5 section-title">Stages</h2>
                         </div>
                     </div>
-                </div>
-                <div class="container">
                     <div class="row">
                         <div class="col-12 py-3">
                             <h2 class="d-flex justify-content-center">Mes Stages</h2>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-6 col-md-6 py-5">
+                        <div class="col-4 col-md-6 py-5">
                             <div class="card">
                                 <div class="card-header">
                                     <h2 class="d-flex card-title justify-content-center">La Toile Gauloise</h2>
                                 </div>
                                 <div class="card-body">
-                                    <img src="img\stage_illustration_1.png" alt="web developpement" class="portfolio-dev-img">
+                                    <img src="img\illustration_stage_1_bts.svg" alt="web developpement" class="portfolio-dev-img">
                                     <h2 class="d-flex card-text justify-content-center fs-4 py-2">Premier stage du BTS SIO</h2>
                                     <button class="btn btn-primary" id="open-popup">Lire plus</button>
                                 </div>
@@ -420,6 +419,8 @@
                                 <div class="popup-content">
                                     <span class="close" id="close-popup">&times;</span>
                                     <p>
+                                        <strong>Contexte :</strong><br>
+                                        J'ai éféctué ce stage dans le cadre de ma première année de BTS SIO, il a duré 7 semaine ()
                                         Lors de ce stage chez La Toile Gauloise, j'ai pu travailler deux points importants et un
                                         plus
                                         secondaire.<br>
@@ -451,13 +452,13 @@
                             </div>
                         </div>
             
-                        <div class="col-6 col-md-6 py-5">
+                        <div class="col-4 col-md-6 py-5">
                             <div class="card">
                                 <div class="card-header">
                                     <h2 class="d-flex card-title justify-content-center">Arthesis</h2>
                                 </div>
                                 <div class="card-body">
-                                    <img src="img\stage_illustration_2.png" alt="web developpement" class="portfolio-dev-img">
+                                    <img src="img\illustration_stage_2_bts.svg" alt="web developpement" class="portfolio-dev-img">
                                     <h2 class="d-flex card-text justify-content-center fs-4 py-2">Deuxième stage du BTS SIO</h2>
                                     <button class="btn btn-primary" id="open-popup-2">Lire plus</button>
                                 </div>

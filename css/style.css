@@ -328,11 +328,18 @@ section{
 .timeline-content-date {
     margin-top: 0;
 }
-.timeline-container{
+.timeline-container-school,
+.timeline-container-work{
     display: none;
 }
-.timeline-container.active{
+.timeline-container-school.active,
+.timeline-container-work.active{
     display: block;
+}
+@media(min-width: 700px){
+    .timeline-size{
+        min-height: 61vh;
+    }
 }
 /* ==================== End Step Section ==================== */
 /* ==================== Projects Section ==================== */
@@ -342,9 +349,18 @@ section{
 .card{
     box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
     border-radius: 0px 20px;
+    max-width: 28rem;
 }
 .card-header{
     background-color: rgb(247, 247, 247);
+}
+.card-body{
+    padding-right: 0;
+    padding-left: 0;
+}
+.card-body button,
+.card-body a{
+    margin-left: 1rem;
 }
 .portfolio-dev-img{
     width: 100%;
