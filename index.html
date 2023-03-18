@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="css\style.css">
     <!-- Lien pour les icones -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, orientation=portrait">
+
 
     <title>Portfolio | Eliott FERTILLE</title>
   </head>
@@ -64,7 +66,7 @@
                 <div class="container p-2 mt-5 py-lg-mega-huge px-lg-mega-huge">
                     <div class="row">
                         <div class="col col-md-6 d-block  order-2 text-gris px-lg-2 py-lg-mega-huge">
-                            <h2 class="name fs-4 fs-md-1">Bonjour, je m'appelle <span class="text-violet-nom fs-2">Eliott Fertille</span></h2>
+                            <h2 class="name fs-4 fs-md-1">Bienvenue sur mon <span class="text-violet-nom fs-2">Portfolio</span></h2>
                             <h2 class="fs-4 fs-md-1">Je suis <span class="text-violet typing fs-5 fs-md-1">Etudiant</span></h2>
                             <button class="btn-gen rounded-pill mt-3 fs-4 fs-md-1"><a href="#" class="text-decoration-none text-light">Contactez-moi</a></button>
                         </div>
@@ -82,7 +84,7 @@
                         </div>
                     </div>
                     <div class="row justify-content-center">
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 px-0">
                             <h2>Je suis étudiant en <span class="text-violet">developpement web</span> et <span class="text-violet">mobile</span></h2>
                         </div>
                     </div>
@@ -242,7 +244,7 @@
                     <div class="timeline-container-school active">
                         <div class="container">
                             <div class="row">
-                                <div class="col-12">
+                                <div class="col-12 px-0">
                                     <h2 class="d-flex justify-content-center">Parcours Scolaire</h2>
                                 </div>
                             </div>
@@ -265,7 +267,7 @@
                                         <div class="timeline-item">
                                             <div class="timeline-icon"></div>
                                             <div class="timeline-content d-block">
-                                                <div class="row justify-content-end">
+                                                <div class="row justify-content-end timeline-right">
                                                     <div class="col-5 px-0">
                                                         <h2 class="timeline-content-date d-flex fs-6 fs-md-4">BTS SIO (option SLAM)</h2>
                                                         <p class="timeline-content-text d-flex ">Lycée Ella Fitzgerald</p>
@@ -317,8 +319,8 @@
                                         <div class="timeline-item">
                                             <div class="timeline-icon"></div>
                                             <div class="timeline-content d-block">
-                                                <div class="row justify-content-end">
-                                                    <div class="col-5">
+                                                <div class="row justify-content-end timeline-right">
+                                                    <div class="col-5 px-0">
                                                         <h2 class="timeline-content-date d-flex fs-6 fs-md-4">Stage, La Toile Gauloise</h2>
                                                         <p class="timeline-content-text d-flex ">Lyon, France</p>
                                                         <p class="timeline-content-text d-flex "><i class='bx bxs-calendar'></i> Mai - Juin - Juillet 2022</p>
@@ -348,25 +350,25 @@
                         </div>
                         <div class="container">
                             <div class="row">
-                              <div class="col-md-6 py-5">
+                              <div class="col-10 col-md-6 py-5 pe-0 ps-lg-5">
                                 <div class="card">
                                   <div class="card-header">
                                     <h5 class="d-flex card-title justify-content-center">Portfolio</h5>
                                   </div>
                                   <div class="card-body">
-                                    <img src="img\portfolio-dev-vector.jpg" alt="web developpement" class="portfolio-dev-img">
+                                    <img src="img\portfolio-dev.png" alt="web developpement" class="portfolio-dev-img">
                                     <h2 class="d-flex card-text justify-content-center fs-4 py-2">Création de mon Portfolio</h2>
                                     <a href="#" class="btn btn-primary" data-toggle="collapse" data-target="#more-info-1">Lire plus</a>
                                     <div class="collapse" id="more-info-1">
                                       <p class="d-flex p-3">
                                         Le site sur lequel vous vous trouvez est mon portfolio.
-                                        Je l'ai codé entièrement en HTML, CSS, JavaScript en utilisant Bootstrap, une librairie utilisant tous ces languages de programmation.
+                                        Je l'ai codé entièrement en HTML, CSS, JavaScript et en utilisant Bootstrap, une librairie utilisant tous ces languages de programmation.
                                       </p>
                                     </div>
                                   </div>
                                 </div>
                               </div>
-                              <div class="col-12 col-md-6 py-5">
+                              <div class="col-10 col-md-6 py-5 pe-0 ps-lg-5">
                                 <div class="card">
                                   <div class="card-header">
                                     <h5 class="d-flex card-title justify-content-center">Satil</h5>
@@ -401,14 +403,14 @@
                             <h2 class="d-flex justify-content-center">Mes Stages</h2>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-4 col-md-6 py-5">
+                    <div class="row justify-content-center">
+                        <div class="col-4 col-md-4 py-5">
                             <div class="card">
                                 <div class="card-header">
                                     <h2 class="d-flex card-title justify-content-center">La Toile Gauloise</h2>
                                 </div>
                                 <div class="card-body">
-                                    <img src="img\illustration_stage_1_bts.svg" alt="web developpement" class="portfolio-dev-img">
+                                    <img src="img\illustration_stage_1_bts.svg" alt="web developpement" class="stage-illustration">
                                     <h2 class="d-flex card-text justify-content-center fs-4 py-2">Premier stage du BTS SIO</h2>
                                     <button class="btn btn-primary" id="open-popup">Lire plus</button>
                                 </div>
@@ -452,13 +454,13 @@
                             </div>
                         </div>
             
-                        <div class="col-4 col-md-6 py-5">
+                        <div class="col-4 col-md-4 py-5">
                             <div class="card">
                                 <div class="card-header">
                                     <h2 class="d-flex card-title justify-content-center">Arthesis</h2>
                                 </div>
                                 <div class="card-body">
-                                    <img src="img\illustration_stage_2_bts.svg" alt="web developpement" class="portfolio-dev-img">
+                                    <img src="img\illustration_stage_2_bts.svg" alt="web developpement" class="stage-illustration">
                                     <h2 class="d-flex card-text justify-content-center fs-4 py-2">Deuxième stage du BTS SIO</h2>
                                     <button class="btn btn-primary" id="open-popup-2">Lire plus</button>
                                 </div>

@@ -43,7 +43,7 @@ section{
     padding-top: 25px;
 }
 .container{
-    padding-right: 5px;
+    padding-right: 0;
 }
 /* Impose la largeur max */
 .width-max{
@@ -341,15 +341,24 @@ section{
         min-height: 61vh;
     }
 }
+@media(max-width: 700px){
+    .timeline-right{
+        max-width: 26rem;
+    }
+}
 /* ==================== End Step Section ==================== */
 /* ==================== Projects Section ==================== */
 .collapse {
     display: none;
 }
 .card{
+    border-radius: 0px 0px 30px 0px;
+    max-height: 60vh;
+}
+.card:hover{
+    transition: ease 0.4s;
     box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
-    border-radius: 0px 20px;
-    max-width: 28rem;
+    cursor: pointer;
 }
 .card-header{
     background-color: rgb(247, 247, 247);
@@ -413,5 +422,11 @@ section{
     color: black;
     text-decoration: none;
     cursor: pointer;
+}
+.stage-illustration{
+    display: none;
+    width: 100%;
+    position: static;
+    justify-content: center;
 }
 /* ==================== End Internship Section ==================== */
