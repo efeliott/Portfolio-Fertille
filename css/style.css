@@ -515,10 +515,15 @@ section{
 /* ==================== Veille Section ==================== */
 .reseaux-veille img{
     max-height: 6rem;
+    display: block;
+    margin: auto;
 }
 @media(max-width: 600px){
     .reseaux-veille img{
-        max-height: 3.5rem;
+        max-height: 3rem;
+    }
+    .reseaux-veille h3{
+        font-size: 18px;
     }
 }
 /* ==================== End Veille Section ==================== */
