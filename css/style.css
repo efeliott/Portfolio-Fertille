@@ -70,9 +70,8 @@ section{
 }
 .text-violet-nom{
     color: var(--primary-color);
-    font-family: 'Moon Dance', cursive;
-    font-size: 48px;
-    font-weight: 700;
+    font-size: 26px;
+    font-weight: 400;
 }
 .btn-gen{
     background-color: var(--primary-color);
@@ -306,7 +305,7 @@ section{
     content: "";
     position: absolute;
     top: 100px;
-    bottom: 140px;
+    bottom: 110px;
     left: 50%;
     width: 5px;
     margin-left: -1.5px;
@@ -351,19 +350,19 @@ section{
     }
 }
 @media(max-width: 700px){
-    .timeline-right{
-        max-width: 26rem;
-        margin-right: 10px;
-    }
     .timeline:before {
         content: "";
         position: absolute;
         top: 100px;
-        bottom: 150px;
+        bottom: 150px ;
         left: 50%;
         width: 5px;
         margin-left: -1.5px;
         background-color: var(--primary-color);
+    }
+    .timeline-right{
+        max-width: 26rem;
+        margin-right: 10px;
     }
 }
 @media(max-width: 500px){
@@ -381,7 +380,39 @@ section{
         background-color: var(--primary-color);
     }
 }
-@media(max-width: 1200px){
+@media(max-width: 400px){
+    .timeline:before {
+        content: "";
+        position: absolute;
+        top: 100px;
+        bottom: 150px !important;
+        left: 50%;
+        width: 5px;
+        margin-left: -1.5px;
+        background-color: var(--primary-color);
+    }
+    .timeline-right{
+        max-width: 26rem;
+        margin-right: 10px;
+    }
+}
+@media(min-width: 500px){
+    .timeline-right{
+        max-width: 32rem;
+        margin-right: 10px;
+    }
+    .timeline:before {
+        content: "";
+        position: absolute;
+        top: 100px;
+        bottom: 110px;
+        left: 50%;
+        width: 5px;
+        margin-left: -1.5px;
+        background-color: var(--primary-color);
+    }
+}
+@media(min-width: 800px){
     .timeline:before {
         content: "";
         position: absolute;
@@ -391,6 +422,10 @@ section{
         width: 5px;
         margin-left: -1.5px;
         background-color: var(--primary-color);
+    }
+    .timeline-right{
+        max-width: 100%;
+        margin-right: 10px;
     }
 }
 /* ==================== End Step Section ==================== */
@@ -412,6 +447,7 @@ section{
 .card-body{
     padding-right: 0;
     padding-left: 0;
+    padding-top: 0;
 }
 .card-body button,
 .card-body a{
@@ -470,8 +506,19 @@ section{
     cursor: pointer;
 }
 .stage-illustration{
+    height: 20rem;
     width: 100%;
     position: static;
     justify-content: center;
 }
 /* ==================== End Internship Section ==================== */
+/* ==================== Veille Section ==================== */
+.reseaux-veille img{
+    max-height: 6rem;
+}
+@media(max-width: 600px){
+    .reseaux-veille img{
+        max-height: 3.5rem;
+    }
+}
+/* ==================== End Veille Section ==================== */
