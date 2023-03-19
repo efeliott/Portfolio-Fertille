@@ -366,7 +366,7 @@ section{
         background-color: var(--primary-color);
     }
 }
-@media(min-width: 500px){
+@media(max-width: 500px){
     .timeline-right{
         max-width: 40rem;
     }
