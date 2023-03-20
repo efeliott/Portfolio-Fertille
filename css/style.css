@@ -293,6 +293,14 @@ section{
     top: 0;
     width: 60%;
 }
+.logo-container{
+    position: absolute;
+}
+.logo-body img{
+    max-height: 6rem;
+    display: block;
+    margin: auto;
+}
 /* ==================== End About Section ==================== */
 /* ==================== Step Section ==================== */
 /* CSS pour la frise chronologique */
@@ -523,7 +531,7 @@ section{
         max-height: 3rem;
     }
     .reseaux-veille h3{
-        font-size: 18px;
+        font-size: 16px;
     }
 }
 /* ==================== End Veille Section ==================== */
