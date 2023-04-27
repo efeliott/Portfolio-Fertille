@@ -474,13 +474,13 @@ section{
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
 }
-@media(min-width: 800px){
+/* @media(min-width: 800px){
     .card-slide {
         max-height: 625px;
         white-space: nowrap;
         overflow-y: hidden;
     }
-}
+} */
 /* ==================== End Projects Section ==================== */
 /* ==================== Internship Section ==================== */
 /* Styles pour le bloc principal */
